@@ -1,0 +1,87 @@
+<!DOCTYPE HTML> 
+<html>
+    <head>
+        <title>Bearcat Hackers Demo</title>
+        
+        <style>
+            .myDiv {
+                width: 200px;
+                height: 200px;
+                background-color: purple;
+                border: 2px solid black;
+                border-radius: 15px;
+                padding: 5px;
+                text-align: center;
+                display: inline-block;
+                margin: 20px;
+            }
+            .myDiv > p {  
+            }
+            .myClass {
+                color: red;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .mySecondClass {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="myDiv">
+            <p class="myClass">This is some text inside a paragraph tag.</p>
+            <p class="mySecondClass">This is some more text.</p>
+        </div>
+        <div class="myDiv">
+            <p class="myClass">This is some text inside a paragraph tag.</p>
+            <p class="mySecondClass">This is some more text.</p>
+        </div>
+        <div class="myDiv">
+            <p class="myClass">This is some text inside a paragraph tag.</p>
+            <p class="mySecondClass">This is some more text.</p>
+        </div>
+        <div class="myDiv">
+            <p class="myClass">This is some text inside a paragraph tag.</p>
+            <p class="mySecondClass">This is some more text.</p>
+        </div>
+        <div class="myDiv">
+            <p class="myClass">This is some text inside a paragraph tag.</p>
+            <p class="mySecondClass">This is some more text.</p>
+        </div>
+        <div class="myDiv">
+            <p class="myClass">This is some text inside a paragraph tag.</p>
+            <p class="mySecondClass">This is some more text.</p>
+        </div>
+        <div class="myDiv">
+            <p class="myClass">This is some text inside a paragraph tag.</p>
+            <p class="mySecondClass">This is some more text.</p>
+        </div>
+        <div class="myDiv">
+            <p class="myClass">This is some text inside a paragraph tag.</p>
+            <p class="mySecondClass">This is some more text.</p>
+        </div>
+        <div class="myDiv">
+            <p class="myClass">This is some text inside a paragraph tag.</p>
+            <p class="mySecondClass">This is some more text.</p>
+        </div>
+        
+        <button id="myButton" onclick="toggleBoxes()">Toggle Button</button>
+        
+        <!-- toggle not working. figure that shit out -->
+        
+        <script>
+            function toggleBoxes() {
+                var classes = document.getElementsByClassName("myDiv");
+                
+                for (var i = 0; i < classes.length; i++) {
+                    if (classes[i].style.visibility = "hidden") {
+                        classes[i].style.visibility = "visible";
+                    }
+                    else {
+                        classes[i].style.visibility = "hidden";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
